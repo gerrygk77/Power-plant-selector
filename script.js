@@ -27,7 +27,7 @@ $('.addValue').on("click", function( event ) {
       contactsRef.push({
         name: $('#name').val().replace(/<[^>]*>/ig, ""),
         email: $('#email').val().replace(/<[^>]*>/ig, ""),
-        expertise: $('#expertise').val().replace(/<[^>]*>/ig, ""),
+        expertise: $('#Expertise').val().replace(/<[^>]*>/ig, ""),
         location: {
           city: $('#city').val().replace(/<[^>]*>/ig, ""),
           state: $('#state').val().replace(/<[^>]*>/ig, "")         
