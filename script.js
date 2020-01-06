@@ -27,7 +27,7 @@ $('.addValue').on("click", function( event ) {
       contactsRef.push({
         name: $('#name').val().replace(/<[^>]*>/ig, ""),
         email: $('#email').val().replace(/<[^>]*>/ig, ""),
-        Expertise: $('#expertise').val().replace(/<[^>]*>/ig, ""),
+        expertise: $('#expertise').val().replace(/<[^>]*>/ig, ""),
         location: {
           city: $('#city').val().replace(/<[^>]*>/ig, ""),
           state: $('#state').val().replace(/<[^>]*>/ig, "")         
@@ -47,7 +47,7 @@ function contactHtmlFromObject(contact){
     html += '<div>';
       html += '<p class="lead">'+contact.name+'</p>';
       html += '<p>'+contact.email+'</p>';
-      html += '<p>'+contact.Expertise+'</p>';
+      html += '<p>'+contact.expertise+'</p>';
       html += '<p><small title="'+contact.location.zip+'">'+contact.location.city+', '+contact.location.state+'</small></p>';
     html += '</div>';
   html += '</li>';
