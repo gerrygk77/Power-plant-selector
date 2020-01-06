@@ -1,12 +1,12 @@
 // file: script.js
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyAvHToVDiX6-8vxSml0rg9S80hIxjoEojw",
-    authDomain: "dec222019.firebaseapp.com",
-    databaseURL: "https://dec222019.firebaseio.com",
-    projectId: "dec222019",
-    storageBucket: "dec222019.appspot.com",
-    messagingSenderId: "592439968262"
+  apiKey: "AIzaSyBLjVwxT4xtrI5HuqIwAiTVIUNYKJSv6p8",
+    authDomain: "power-plant-selector.firebaseapp.com",
+    databaseURL: "https://power-plant-selector.firebaseio.com",
+    projectId: "power-plant-selector",
+    storageBucket: "power-plant-selector.appspot.com",
+    messagingSenderId: "193102307177",
 };
 firebase.initializeApp(config);
 
@@ -27,10 +27,10 @@ $('.addValue').on("click", function( event ) {
       contactsRef.push({
         name: $('#name').val().replace(/<[^>]*>/ig, ""),
         email: $('#email').val().replace(/<[^>]*>/ig, ""),
+        Expertise: $('#expertise').val().replace(/<[^>]*>/ig, ""),
         location: {
           city: $('#city').val().replace(/<[^>]*>/ig, ""),
-          state: $('#state').val().replace(/<[^>]*>/ig, ""),
-          zip: $('#zip').val().replace(/<[^>]*>/ig, "")
+          state: $('#state').val().replace(/<[^>]*>/ig, "")         
         }
       })
       contactForm.reset();
